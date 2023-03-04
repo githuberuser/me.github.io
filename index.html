@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Blog</title>
+	<title>My Fancy Blog</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
-		<h1>My Blog</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+	<header class="header">
+		<div class="header__logo">
+			<img src="logo.png" alt="My Fancy Blog">
+		</div>
+		<nav class="header__nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">About</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<article>
-			<header>
-				<h2>Article Title</h2>
-				<p>Posted on <time datetime="2023-03-04">March 4, 2023</time></p>
+	<main class="main">
+		<article class="article">
+			<header class="article__header">
+				<h2 class="article__title">Article Title</h2>
+				<p class="article__date">Posted on <time datetime="2023-03-04">March 4, 2023</time></p>
 			</header>
-			<p>Article content goes here...</p>
+			<div class="article__content">
+				<p>Article content goes here...</p>
+				<img src="article-image.jpg" alt="Article Image">
+				<p>More article content goes here...</p>
+			</div>
+			<footer class="article__footer">
+				<p>Tags: <a href="#" class="article__tag">Tag 1</a>, <a href="#" class="article__tag">Tag 2</a></p>
+			</footer>
 		</article>
 	</main>
-	<footer>
-		<p>&copy; 2023 My Blog</p>
+	<footer class="footer">
+		<p>&copy; 2023 My Fancy Blog</p>
 	</footer>
 </body>
 </html>
